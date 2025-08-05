@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Bundle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+      <h1>Buy 3 and Save 30%</h1>
+    </div>
+
+    <div class="main-content">
+      <div class="products-section">
+        <div class="product-grid" id="productGrid">
+        </div>
+      </div>
+
+      <div class="bundle-sidebar">
+        <div class="bundle-header">
+          <div class="bundle-title">Create a Bundle</div>
+          <div class="bundle-subtitle">Add at least 3 products and Save 30%.</div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <div class="bundle-items" id="bundleItems">
+        </div>
+
+        <div class="bundle-summary" id="bundleSummary" style="display: none;">
+          <div class="summary-row discount">
+            <span>Discount</span>
+            <span id="discountAmount">- $0.00 (30%)</span>
+          </div>
+          <div class="summary-row total">
+            <span>Subtotal</span>
+            <span id="subtotalAmount">$0.00</span>
+          </div>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn" disabled>
+          <span>Add 3 Items to Proceed</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
